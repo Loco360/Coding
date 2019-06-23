@@ -1,3 +1,0 @@
-import tweepy as t
-
-
