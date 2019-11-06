@@ -1,0 +1,26 @@
+            Console.WriteLine("Willkommen im Entscheidungsbaum der VR Payment GmbH für die Thomas Cook Insolvenz");
+            Console.WriteLine("Handelt es sich bei der Reklamation um einen Supercase? (ja/nein)");
+            string userEingabeSC = Console.ReadLine();
+            userEingabeSC = userEingabeSC.ToLower();
+            string superCaseMessage = "";
+
+            if (userEingabeSC == "ja")
+            superCaseMessage = "Öffne die Dokumente im SuperCase";
+            else if (userEingabeSC == "nein")
+            superCaseMessage = "Öffne die Dokumente im Claim";
+            else
+            {
+                superCaseMessage = "Es wurde eine falsche Eingabe getätigt... Bitte versuche es erneut";
+            }
+                            
+            Console.WriteLine(superCaseMessage);
+
+            Console.WriteLine("Bitte prüfe die Dokumente...");
+            Console.WriteLine("\nHandelt es sich hierbei um eine Pauschalreise? (ja/nein)");
+            string userEingabePauschal = Console.ReadLine();
+            string pauschalReise = (userEingabePauschal == "ja") ? "Pauschalreisen werden abgelehnt Bitte erstelle hierzu den Brief 88/84 Thomas Cook Ablehnung in dem obersten Claim" : "Somit handelt es sich um eine Einzelleistung. Diese sind rückbelastungsfähig \nBitte fahre fort.";
+            Console.WriteLine(pauschalReise);
+
+
+
+            Console.ReadLine();
